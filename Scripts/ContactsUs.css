@@ -1,0 +1,120 @@
+body {
+
+    font-family: 'Inter', sans-serif;
+    background-image: linear-gradient(rgb(0, 0, 0,0.09),rgb(0, 0, 0,0.09)), url(../Images/contact-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex: 3;
+    text-align: right;
+
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Robato', sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    padding: 5px;
+  }
+  .cool-link::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width  0.3s;
+  }
+  .cool-link:hover::after{
+    width: 100%;
+    transition: width  0.3s;
+  }
+  .card {
+    width: 400px;
+    height: auto;
+    padding: 2rem;
+    border-radius: .5rem;
+        margin: 25px; /* Added */
+        margin-left: auto;
+        margin-right: auto;
+        float: none; /* Added */
+        margin-bottom: auto; /* Added */
+  }
+  
+  .card-title {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    
+  }
+  
+  p, a {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  a {
+    color: #4d4ae8;
+    text-decoration: none;
+  }
+  .card {
+	/* other styles */
+	background: rgba(255, 255, 255, .59);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 5px;
+    border-radius: .5rem;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  

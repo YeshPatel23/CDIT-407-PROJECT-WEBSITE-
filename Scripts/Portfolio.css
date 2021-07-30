@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background: #000;*/
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    padding: 40px 400px;
+    z-index: 1000;
+    transition: 0.6s;
+}
+  
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+    margin: 3px, 3px;
+    text-decoration: none;
+    color:whitesmoke;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    padding: 15px 15px;
+
+}
+.active-btn,
+ul li a:hover {
+  background:linear-gradient(rgb(0, 0, 0,0.4),rgb(0, 0, 0,0.4));
+}
+
+.sticky {
+    padding: 5px 100px;
+    background: rgb(0, 0, 0);
+    opacity: 0.7;
+    transition: 0.6s;
+}
+  
+.sticky ul li a {
+    color: rgb(255, 245, 245);
+    font-weight: bolder;
+}
+
+  
+  /* End of navbar */
+  
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container .column{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-right: 2px solid rgba(0,0,0,.5);
+    box-sizing: border-box;
+    z-index: 1;
+}
+.container .column:last-child{
+    border-right: none;
+
+}
+.container .column .content{
+    position: relative;
+    height: 100%;
+
+}
+.container .column .content h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(0,0,0,.1);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255,.2);
+    font-size: 15em;
+    border-top: 2px solid rgba(0,0,0,.5);
+    border-bottom: 2px solid rgba(0,0,0,.5);
+}
+.container .column .content .box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(100%);
+    box-sizing: border-box;
+    padding: 40px;
+    background: rgba(255,255,255,1);
+    text-align: center;
+    transition: 0.8s;
+    opacity: 0;
+}
+.container .column.column.active .content .box{
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.container .column .content .box h2{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #262626;
+}
+.container .column .content .box p{
+    color: #262626;
+    font-size: 16px;
+}
+.container .column .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+.container .column.active .bg.bg1{
+    background: url(../Images/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
+.container .column.column.active .bg.bg2{
+    background: url(../Images/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
+.container .column.column.active .bg.bg3{
+    background: url(../Images/bg3.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
+.container .column.column.active .bg.bg4{
+    background: url(../Images/bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+} 
+
+
+

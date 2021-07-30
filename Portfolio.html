@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="Scripts/Portfolio.css">
+    
+
+</head>
+<body>
+   <header>
+       <ul>
+        <li><a href="Home.html"> Home </a></li>
+          <li><a href="AboutUs.html"> About Us </a></li>
+          <li><a href="OurTeam.html"> Our Team </a></li>
+          <li><a href="Portfolio.html" class="active-btn"> Portfolio </a></li>
+          <li><a href="ContactUs.html"> Contact Us </a></li>
+       </ul>
+     </header>
+ 
+    <div class="container">
+        <div class="column active">
+            <div class="content">
+                <h1>1</h1>
+                <div class="box">
+                    <h2><u><i>BOUQUET</i></u></h2>
+                    <p><br></p>
+                    <p><i>This is on of our unique door bouquets we made last Chrismas. We make a wide variety of bouquets, from small to beatiful, large to elegant.</i></p>
+
+                </div>
+            </div>
+            <div class="bg bg1"></div>
+        </div>
+        <div class="column">
+           <div class="content">
+               <h1>2</h1>
+               <div class="box">
+                   <h2><u><i>VALENTINE'S</i></u></h2>
+                   <p><i>This Project was brought, from the groud up in one week. Mr Yash Patel called us from Nairobi to decorate his new mansion, which was both a suprise gift and to enjoy valentine's together, with gorgeous roses with reflective mirror to bring the elegance of the new home </i></p>
+               </div>
+           </div>
+           <div class="bg bg2"></div>
+       </div>
+       <div class="column">
+           <div class="content">
+               <h1>3</h1>
+               <div class="box">
+                   <h2><u><i>DRUM'S BITTING AND A KNOT TIED</i></u></h2>
+                   <p><i>We went to Santhan Hindu Hall along Ogada st. Mr & Miss Ajay were kind enough to let us decorate the hall at a budget. The results were astonishing.</i></p>
+               </div>
+           </div>
+           <div class="bg bg3"></div>
+       </div>
+       <div class="column">
+           <div class="content">
+               <h1>4</h1>
+               <div class="box">
+                   <h2><u><i>A UNION BEGINS.</i></u></h2>
+                   <p><i>This can be said, to be our most fun project ever. We went to Mbita, Homabay. In an island called Takawiri, A white sand beach. A Knot was tied. They were only 18 people at the wedding, aacording to the Panademic requlations</i></p>
+               </div>
+           </div>
+           <div class="bg bg4"></div>
+       </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).on('mouseover', '.container .column', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+   </script>
+</body>
+</html>
